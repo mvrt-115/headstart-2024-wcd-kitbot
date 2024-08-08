@@ -11,10 +11,10 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Drivetrain extends SubsystemBase {
 
-  private final CANSparkMax leftFront = new CANSparkMax(4, MotorType.kBrushed);
-  private final CANSparkMax leftBack = new CANSparkMax(3, MotorType.kBrushed);
-  private final CANSparkMax rightFront = new CANSparkMax(2, MotorType.kBrushed);
-  private final CANSparkMax rightBack = new CANSparkMax(1, MotorType.kBrushed);
+  private final CANSparkMax leftFront = new CANSparkMax(6, MotorType.kBrushed);//4 for other bot
+  private final CANSparkMax leftBack = new CANSparkMax(3, MotorType.kBrushed);//3 for wide bot
+  private final CANSparkMax rightFront = new CANSparkMax(7, MotorType.kBrushed);//2 for wide bot
+  private final CANSparkMax rightBack = new CANSparkMax(4, MotorType.kBrushed);//1 for wide bot
 
   /** Creates a new Drivetrain. */
   public Drivetrain() {

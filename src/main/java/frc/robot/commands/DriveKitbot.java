@@ -10,13 +10,12 @@ import frc.robot.subsystems.Drivetrain;
 
 public class DriveKitbot extends Command {
 
-  private Drivetrain drivetrain;
+  // subsystem
+
 
   /** Creates a new DriveKitbot. */
-  public DriveKitbot(Drivetrain drivetrain) {
-    this.drivetrain = drivetrain;
+  public DriveKitbot() {
     // Use addRequirements() here to declare subsystem dependencies.
-    addRequirements(drivetrain);
   }
 
   // Called when the command is initially scheduled.
@@ -26,7 +25,7 @@ public class DriveKitbot extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    drivetrain.drive(RobotContainer.getSpeed(), RobotContainer.getTurn());
+    
   }
 
   // Called once the command ends or is interrupted.
